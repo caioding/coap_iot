@@ -59,10 +59,40 @@
             android:text="Ler disco" />
 
         <Button
+            android:id="@+id/btnUptime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ler Uptime" />
+
+        <Button
+            android:id="@+id/btnTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ler Hora Local" />
+
+        <Button
+            android:id="@+id/btnHostname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ler Hostname" />
+
+        <Button
             android:id="@+id/btnTemperature"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Ler temperatura simulada" />
+
+        <Button
+            android:id="@+id/btnHumidity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ler umidade simulada" />
+
+        <Button
+            android:id="@+id/btnLight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ler luminosidade simulada" />
 
         <Button
             android:id="@+id/btnObserveCpu"

@@ -33,7 +33,12 @@ class MainActivity : AppCompatActivity() {
         val btnCpu = findViewById<Button>(R.id.btnCpu)
         val btnMemory = findViewById<Button>(R.id.btnMemory)
         val btnDisk = findViewById<Button>(R.id.btnDisk)
+        val btnUptime = findViewById<Button>(R.id.btnUptime)
+        val btnTime = findViewById<Button>(R.id.btnTime)
+        val btnHostname = findViewById<Button>(R.id.btnHostname)
         val btnTemperature = findViewById<Button>(R.id.btnTemperature)
+        val btnHumidity = findViewById<Button>(R.id.btnHumidity)
+        val btnLight = findViewById<Button>(R.id.btnLight)
         val btnSendMessage = findViewById<Button>(R.id.btnSendMessage)
         val btnWriteLog = findViewById<Button>(R.id.btnWriteLog)
 
@@ -53,8 +58,28 @@ class MainActivity : AppCompatActivity() {
             runGet("system/disk")
         }
 
+        btnUptime.setOnClickListener {
+            runGet("system/uptime")
+        }
+
+        btnTime.setOnClickListener {
+            runGet("system/time")
+        }
+
+        btnHostname.setOnClickListener {
+            runGet("system/hostname")
+        }
+
         btnTemperature.setOnClickListener {
             runGet("environment/random-temperature")
+        }
+
+        btnHumidity.setOnClickListener {
+            runGet("environment/random-humidity")
+        }
+
+        btnLight.setOnClickListener {
+            runGet("environment/random-light")
         }
 
         btnObserveCpu.setOnClickListener {
